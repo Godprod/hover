@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(255, 241, 112);
+  padding: 10px;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+  background: aqua;
+}
+
+.box .img {
+  border: 1px solid rgb(132, 0, 255);
+}
+
+.img {
+  width: 100%;
+}
+
+.hidden {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: none;
+  padding: 20px;
+  width: 400px;
+  color: chartreuse;
+  font-size: 20px;
+
+}
+
+.box:hover .hidden {
+  display: block;
+}
+
+.navigation {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  background-color: rgb(32, 178, 170);
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.navigation > li {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: rgb(33, 197, 189);
+  scroll-behavior: smooth;
+}
+
+.navigation > li > a {
+  font-size: 20px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
